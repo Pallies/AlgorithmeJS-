@@ -1,0 +1,22 @@
+{
+  "name": "algorithmejs",
+  "version": "1.0.0",
+  "description": "description d'algorithme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pallies/AlgorithmeJS.git"
+  },
+  "author": "Pallies yvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pallies/AlgorithmeJS/issues"
+  },
+  "homepage": "https://github.com/Pallies/AlgorithmeJS#readme"
+}

@@ -1,2 +1,2 @@
-# AlgorythmeJS
+### AlgorythmeJS
 description d'algorythme
