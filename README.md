@@ -1,2 +1,0 @@
-### AlgorythmeJS
-description d'algorythme
