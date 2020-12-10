@@ -1,2 +1,2 @@
-# AlgorythmeJS
-description d'algorythme
+### AlgorithmeJS
+description d'algorithme
