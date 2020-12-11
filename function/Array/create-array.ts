@@ -40,7 +40,7 @@ const randomDoubleArray = (len: number) => {
  * @param  {string|number=0} cell
  */
 const initDoubleArray = (len: number, cell: string | number = 0) => {
-  return Array.from({ length: len }, () => [].fill(cell));
+  return Array.from({ length: len }, () => [cell]);
 };
 
 /**
@@ -57,4 +57,11 @@ const disorderArray = (array: Array<number>) => {
     array[j] = temp;
   }
   return array;
+};
+export {
+  randomArray,
+  initArray,
+  randomDoubleArray,
+  initDoubleArray,
+  disorderArray,
 };
