@@ -1,3 +1,11 @@
+/**
+ * comparaison de deux tableaux
+ * dont le tableau initial a subi une modification 
+ * @param values valeur initial
+ * @param carre valeur initial au carré
+ * @returns true si les valeurs sont intégralement retrouvées 
+ * dans le tableau de carrés
+ */
 // first solution
 function same(values: number[], carre: number[]): boolean {
   let result = true;
