@@ -2,13 +2,13 @@
   "name": "algorithmejs",
   "version": "1.0.0",
   "description": "description d'algorithme",
-  "main": "index.js",
-  "directories": {
-    "test": "test",
-    "start":"tsnd --respawn --file"
-  },
+
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:build": "tsc -w",
+    "start:run": "nodemon  ./build/functions/anagram.js",
+    "start": "concurrently npm:start:*"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,14 @@
     "url": "https://github.com/Pallies/AlgorithmeJS/issues"
   },
   "homepage": "https://github.com/Pallies/AlgorithmeJS#readme",
-  "dependencies": {},
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
     "ts-node-dev": "^1.1.1"
   }
 }
