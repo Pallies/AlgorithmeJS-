@@ -60,6 +60,7 @@ Time 1: ${(time2 - time1) / 1000} seconds.
 or Best 
 Time 2: ${(time4 - time3) / 1000} seconds.
 `);
+// O(n)
 function sameBestter(values: number[], carre: number[]): boolean {
   if (values.length !== carre.length) return false;
   //   itération
