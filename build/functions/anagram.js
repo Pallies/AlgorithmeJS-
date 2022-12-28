@@ -1,4 +1,5 @@
 "use strict";
+// O(n)
 function anagram(...str) {
     let a = {};
     let b = {};

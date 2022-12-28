@@ -1,4 +1,5 @@
 "use strict";
+// O(log n)
 function sumZero(arg) {
     let start, end = arg.length - 1;
     // O(n)
