@@ -1,3 +1,4 @@
+// O(log n)
 function sumZero(arg: number[]): any {
   let start,
     end = arg.length - 1;
