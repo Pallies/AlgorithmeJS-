@@ -1,4 +1,5 @@
-// compter le nombre d'occurence dans une chaine
+// O(n)
+/** compter le nombre d'occurence dans une chaine */
 function uniqValue(arg: any): number {
   if (arg.length == 0) return 0;
   let result: {[key:number]:number} = {};
