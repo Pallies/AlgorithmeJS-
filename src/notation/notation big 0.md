@@ -21,4 +21,4 @@ f(n) carré f(n) = n²
 f(n) constant f(n) = 1
 f(n) différent f(n) = ?
 
-![Alt text](image.png)
+![Alt text](big-o.png)
