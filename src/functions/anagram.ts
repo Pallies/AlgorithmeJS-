@@ -1,3 +1,4 @@
+// O(n)
 function anagram(...str: string[]): boolean {
   let a: any = {};
   let b: any = {};
