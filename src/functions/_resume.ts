@@ -34,3 +34,21 @@ function multiplePointer(arg: any) {
   }
   return left == 0 ? 0 : left + 1;
 }
+/** O(n) */
+function slidingWindow(input: number[], window: number) {
+  let max = 0;
+  let tmp = 0;
+  if (input.length < window) return null;
+//   calcul la somme de la première fenêtre
+  for (let i = 0; i < window; i++) {
+    max += input[i];
+  }
+  tmp=max;
+//   enleve le premier et ajoute le dernier à la somme
+// glissement de la fenêtre
+for (let i = window; i < input.length; i++) {
+    tmp = tmp - input[i - window] + input[i];
+    max = Math.max(max, tmp);
+  }
+  return max;
+}

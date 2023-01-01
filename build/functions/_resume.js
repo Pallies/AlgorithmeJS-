@@ -1,5 +1,5 @@
 "use strict";
-// O(n)
+/** O(n) */
 function frequenceCounter(...str) {
     let a = {};
     let b = {};
@@ -17,6 +17,7 @@ function frequenceCounter(...str) {
     }
     return true;
 }
+/** O(n) */
 function counterSum(arg) {
     let start = 0, end = arg.length - 1;
     while (start < end) {
@@ -29,7 +30,7 @@ function counterSum(arg) {
             end--;
     }
 }
-/** avec deux pointeur sur une liste triée */
+/** O(log n) */
 function multiplePointer(arg) {
     let left = 0;
     for (let rigth = 1; rigth < arg.length; rigth++) {
@@ -39,4 +40,23 @@ function multiplePointer(arg) {
         }
     }
     return left == 0 ? 0 : left + 1;
+}
+/** O(n) */
+function slidingWindow(input, window) {
+    let max = 0;
+    let tmp = 0;
+    if (input.length < window)
+        return null;
+    //   calcul la somme de la première fenêtre
+    for (let i = 0; i < window; i++) {
+        max += input[i];
+    }
+    tmp = max;
+    //   enleve le premier et ajoute le dernier à la somme
+    // glissement de la fenêtre
+    for (let i = window; i < input.length; i++) {
+        tmp = tmp - input[i - window] + input[i];
+        max = Math.max(max, tmp);
+    }
+    return max;
 }
